@@ -3,7 +3,7 @@
 #include <iostream>
 #include <time.h>
 #include "Plataforma.h"
-
+//teste
 using namespace std;
 
 // variaveis globais
