@@ -21,8 +21,8 @@ void Objeto::Control_left()
 	int dir_xx = 5;
 
 	
-		if (x <= 70) {
-			x = 70;
+		if (x <= 100) {
+			x = 100;
 		}
 		//movimenta objeto 
 		this->x -= 8 * dir_xx;
@@ -32,8 +32,8 @@ void Objeto::Control_right()
 {
 	int dir_xx = 5;
 	
-		if (x >= 430) {
-			x = 430;
+		if (x >= 1000) {
+			x = 1000;
 		}
 		//movimenta objeto
 		this->x += 8 * dir_xx;
