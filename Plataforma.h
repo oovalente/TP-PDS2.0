@@ -6,10 +6,10 @@ private:
 	int x;
 	int y;
 	int vida;
-	int ID;
+	int velocidade;
 
 public:
-	Objeto(int x, int y, int vida, int ID);
+	Objeto(int x, int y, int vida, int velocidade);
 
 	void Draw(ALLEGRO_BITMAP* buffer);
 	void Control_left();
@@ -18,4 +18,3 @@ public:
 
 
 };
-
