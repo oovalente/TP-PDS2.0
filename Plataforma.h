@@ -1,15 +1,16 @@
 #include <allegro5/allegro.h>
 
-class Objeto
+class Plataforma
 {
 private:
 	int x;
 	int y;
 	int vida;
+	int velocidade;
 	int ID;
 
 public:
-	Objeto(int x, int y, int vida, int ID);
+	Plataforma(int x, int y, int vida, int velocidade);
 
 	void Draw(ALLEGRO_BITMAP* buffer);
 	void Control_left();
@@ -18,4 +19,3 @@ public:
 
 
 };
-
