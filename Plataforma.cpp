@@ -1,5 +1,6 @@
+#include "Plataforma.h"
 
-Objeto::Objeto(int x, int y, int vida, int ID)
+Plataforma::Plataforma(int x, int y, int vida, int ID)
 {
 	this->x = x;
 	this->y = y;
@@ -7,7 +8,7 @@ Objeto::Objeto(int x, int y, int vida, int ID)
 	this->ID = ID;
 }
 
-void Objeto::Draw(ALLEGRO_BITMAP* buffer)
+void Plataforma::Draw(ALLEGRO_BITMAP* buffer)
 {
 	//usa a cor rosa como transparencia
 	al_convert_mask_to_alpha(buffer, al_map_rgb(255, 0, 255));
@@ -15,7 +16,7 @@ void Objeto::Draw(ALLEGRO_BITMAP* buffer)
 	al_draw_bitmap(buffer, this->x, this->y, 0);
 }
 
-void Objeto::Control_left()
+void Plataforma::Control_left()
 {
 	int dir_xx = 5;
 
@@ -27,7 +28,7 @@ void Objeto::Control_left()
 		this->x -= 8 * dir_xx;
 }
 
-void Objeto::Control_right()
+void Plataforma::Control_right()
 {
 	int dir_xx = 5;
 	
@@ -38,7 +39,7 @@ void Objeto::Control_right()
 		this->x += 8 * dir_xx;
 }
 
-void Objeto::colidir()
+void Plataforma::colidir()
 {
 	
 }

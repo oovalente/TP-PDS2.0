@@ -118,7 +118,7 @@ int inicializar()
 int main()
 {
 	//cria objeto
-	Objeto Plataforma(CAMP_W/2, CAMP_H * 0.95, 0, 0);
+	Plataforma Plataforma(CAMP_W/2, CAMP_H * 0.95, 0, 0);
 
 	if (!inicializar())
 	{
